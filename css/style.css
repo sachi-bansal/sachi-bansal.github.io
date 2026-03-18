@@ -251,6 +251,15 @@ p {
   max-height: 60vh;
   overflow: visible;
 }
+.silhouette-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, var(--amber), var(--indigo));
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 1;
+}
 .silhouette-container img {
   max-height: 60vh;
   width: auto;
