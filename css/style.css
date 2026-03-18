@@ -257,6 +257,7 @@ p {
   inset: 0;
   background: linear-gradient(to bottom, var(--amber), var(--indigo));
   mix-blend-mode: screen;
+  opacity: 0.5;
   pointer-events: none;
   z-index: 1;
 }
