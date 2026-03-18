@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sachi Bansal — Biomedical Engineering</title>
+  <meta name="description" content="Portfolio of Sachi Bansal, PhD Candidate in Biomedical Engineering at UCLA. Clinical device development, surgical validation, and digital health research.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav__logo active">Sachi Bansal</a>
+    <ul class="nav__links">
+      <li class="nav__dropdown">
+        <a href="#">Projects ▾</a>
+        <ul class="nav__dropdown-menu">
+          <span class="nav__sub-label">UCLA</span>
+          <li><a href="thumb.html">Biosynthetic Thumb Prosthesis</a></li>
+          <li><a href="knee-ucla.html">Biosynthetic Knee Endoprosthesis</a></li>
+          <span class="nav__sub-label">Stanford</span>
+          <li><a href="knee-stanford.html">ACL &amp; Cartilage Research</a></li>
+          <span class="nav__sub-label">Samsung</span>
+          <li><a href="wrist-samsung.html">Digital Health Internship</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="assets/sachi_resume_march_2026.pdf" class="nav__cv" target="_blank">CV ↓</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <h1 id="hero-title">Sachi Bansal</h1>
+    <p class="hero__subtitle" id="hero-subtitle">PhD Candidate · Biomedical Engineering · UCLA</p>
+
+    <div class="silhouette-container" id="silhouette">
+      <img src="media/human_silhouette.jpg" alt="Human body silhouette showing project locations">
+
+      <!-- Hotspot: Thumb (anatomical right = viewer's left) -->
+      <div class="hotspot hotspot--amber" id="hs-thumb"
+           style="top:64%;left:21%"
+           onclick="navigateTo('thumb.html')">
+        <span class="hotspot__label">Biosynthetic Thumb Prosthesis</span>
+      </div>
+
+      <!-- Hotspot: Right knee / UCLA (viewer's left) -->
+      <div class="hotspot hotspot--amber" id="hs-knee-ucla"
+           style="top:74%;left:33%"
+           onclick="navigateTo('knee-ucla.html')">
+        <span class="hotspot__label">Biosynthetic Knee Endoprosthesis</span>
+      </div>
+
+      <!-- Hotspot: Left knee / Stanford (viewer's right) -->
+      <div class="hotspot hotspot--indigo" id="hs-knee-stanford"
+           style="top:74%;left:48%"
+           onclick="navigateTo('knee-stanford.html')">
+        <span class="hotspot__label">Stanford ACL Research</span>
+      </div>
+
+      <!-- Hotspot: Left wrist / Samsung (viewer's right) -->
+      <div class="hotspot hotspot--indigo" id="hs-samsung"
+           style="top:62%;left:57%"
+           onclick="navigateTo('wrist-samsung.html')">
+        <span class="hotspot__label">Samsung Digital Health</span>
+      </div>
+    </div>
+
+    <p class="hero__scroll-hint" id="hero-hint">↓ Scroll to explore</p>
+  </section>
+
+  <!-- PROJECT CARDS -->
+  <section class="projects-grid reveal-group">
+    <a href="thumb.html" class="project-card">
+      <p class="project-card__org label--amber">UCLA · 2025</p>
+      <h3 class="project-card__title">Biosynthetic Thumb Prosthesis</h3>
+      <p class="project-card__desc">Implantable prosthetic restoring opposition pinch. Published in npj Biomedical Innovation.</p>
+    </a>
+    <a href="knee-ucla.html" class="project-card">
+      <p class="project-card__org label--amber">UCLA · In Progress</p>
+      <h3 class="project-card__title">Biosynthetic Knee Endoprosthesis</h3>
+      <p class="project-card__desc">Bone-block interface enabling direct patellar tendon suturing in endoprosthetic reconstruction.</p>
+    </a>
+    <a href="knee-stanford.html" class="project-card project-card--indigo">
+      <p class="project-card__org label--indigo">Stanford · 2020–2022</p>
+      <h3 class="project-card__title">ACL &amp; Cartilage Research</h3>
+      <p class="project-card__desc">DoD-funded longitudinal study on post-traumatic osteoarthritis following ACL injury.</p>
+    </a>
+    <a href="wrist-samsung.html" class="project-card project-card--indigo">
+      <p class="project-card__org label--indigo">Samsung · 2025</p>
+      <h3 class="project-card__title">Digital Health Internship</h3>
+      <p class="project-card__desc">Clinical validation algorithm for continuous blood pressure monitoring in wearable devices.</p>
+    </a>
+  </section>
+
+  <footer class="footer">
+    <a href="mailto:sachibansal248@gmail.com" class="footer__link">sachibansal248@gmail.com</a>
+    <a href="https://linkedin.com/in/sachibansal" class="footer__link" target="_blank">LinkedIn →</a>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/transitions.js"></script>
+  <script>
+    // Navigate with page fade-out
+    function navigateTo(url) {
+      gsap.to(document.body, {
+        opacity: 0, duration: 0.2, ease: "power1.in",
+        onComplete: () => { window.location.href = url; }
+      });
+    }
+
+    // Hero load sequence — title first, then subtitle (per spec)
+    const tl = gsap.timeline({ delay: 0.1 });
+    tl.from("#hero-title",    { opacity: 0, y: 20, duration: 0.6, ease: "power2.out" })
+      .from("#hero-subtitle", { opacity: 0, y: 20, duration: 0.6, ease: "power2.out" }, "-=0.3")
+      .from("#silhouette",    { opacity: 0, y: 60, duration: 0.9, ease: "power2.out" }, "-=0.2")
+      .from("#hs-thumb",      { opacity: 0, scale: 0, duration: 0.4, ease: "back.out(2)" }, "+=0.1")
+      .from("#hs-knee-ucla",  { opacity: 0, scale: 0, duration: 0.4, ease: "back.out(2)" }, "-=0.2")
+      .from("#hs-knee-stanford",{ opacity: 0, scale: 0, duration: 0.4, ease: "back.out(2)" }, "-=0.2")
+      .from("#hs-samsung",    { opacity: 0, scale: 0, duration: 0.4, ease: "back.out(2)" }, "-=0.2")
+      .from("#hero-hint",     { opacity: 0, duration: 0.5 }, "+=0.2");
+  </script>
+</body>
+</html>
