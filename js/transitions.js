@@ -3,8 +3,11 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
-// --- Page fade-in on load ---
+// --- Page fade-in on load and back/forward navigation ---
 gsap.to(document.body, { opacity: 1, duration: 0.25, ease: "power1.out" });
+window.addEventListener("pageshow", e => {
+  if (e.persisted) gsap.set(document.body, { opacity: 1 });
+});
 
 // --- Intercept internal links for fade-out ---
 document.addEventListener("DOMContentLoaded", () => {
