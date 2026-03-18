@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sachi Bansal — Stanford ACL Research</title>
+  <meta name="description" content="DoD-funded longitudinal research on post-traumatic osteoarthritis following ACL injury. Stanford Department of Orthopaedic Surgery, 2020–2022.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Sachi Bansal</a>
+    <ul class="nav__links">
+      <li class="nav__dropdown">
+        <a href="#" class="active">Projects ▾</a>
+        <ul class="nav__dropdown-menu">
+          <span class="nav__sub-label">UCLA</span>
+          <li><a href="thumb.html">Biosynthetic Thumb Prosthesis</a></li>
+          <li><a href="knee-ucla.html">Biosynthetic Knee Endoprosthesis</a></li>
+          <span class="nav__sub-label">Stanford</span>
+          <li><a href="knee-stanford.html" class="active">ACL &amp; Cartilage Research</a></li>
+          <span class="nav__sub-label">Samsung</span>
+          <li><a href="wrist-samsung.html">Digital Health Internship</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="assets/sachi_resume_march_2026.pdf" class="nav__cv" target="_blank">CV ↓</a></li>
+    </ul>
+  </nav>
+
+  <!-- TYPOGRAPHIC HERO -->
+  <header class="project-hero project-hero--text" id="project-hero">
+    <div style="max-width:800px;">
+      <p class="label label--indigo" style="margin-bottom:16px;">Knee · Stanford Orthopaedic Surgery · 2020–2022</p>
+      <h1>Post-Traumatic Osteoarthritis Research</h1>
+    </div>
+  </header>
+
+  <!-- SECTION 1 -->
+  <section class="project-section">
+    <div class="project-section__text reveal-left">
+      <p class="label label--indigo">Study Overview</p>
+      <h2>Preventing Joint Degeneration after ACL Injury</h2>
+      <p>ACL injuries are among the most common orthopaedic traumas, frequently leading to post-traumatic osteoarthritis (PTOA) — progressive cartilage degeneration that significantly reduces quality of life. As Clinical Research Coordinator at Stanford's Department of Orthopaedic Surgery, I coordinated a DoD-funded multi-site longitudinal study evaluating interventions to prevent PTOA following ACL reconstruction.</p>
+    </div>
+    <div class="project-section__text reveal-right">
+      <p class="label label--indigo">My Role</p>
+      <h2>Coordination &amp; Analysis</h2>
+      <p>I executed IRB-approved protocols across study sites using REDCap, coordinated with orthopaedic surgeons, biostatisticians, and biomedical engineers for multi-modal data collection including patient-reported outcomes, gait analysis, and longitudinal MRI imaging.</p>
+      <p>I developed semi-automated MRI segmentation algorithms in MATLAB to analyze cartilage tissue changes across over 1,400 images, correlating biomechanical loading patterns with tissue degeneration outcomes.</p>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="project-stats reveal-group">
+    <div>
+      <p class="project-stat__number project-stat__number--indigo">1,400+</p>
+      <p class="project-stat__label">MRI images analyzed</p>
+    </div>
+    <div>
+      <p class="project-stat__number project-stat__number--indigo">DoD</p>
+      <p class="project-stat__label">Funded multi-site study</p>
+    </div>
+    <div>
+      <p class="project-stat__number project-stat__number--indigo">GCP</p>
+      <p class="project-stat__label">Certified clinical research</p>
+    </div>
+  </div>
+
+  <!-- PROJECT NAV -->
+  <nav class="project-nav">
+    <a href="knee-ucla.html" class="project-nav__link">← Biosynthetic Knee Endoprosthesis</a>
+    <a href="wrist-samsung.html" class="project-nav__link">Samsung Digital Health →</a>
+  </nav>
+
+  <footer class="footer">
+    <a href="mailto:sachibansal248@gmail.com" class="footer__link">sachibansal248@gmail.com</a>
+    <a href="https://linkedin.com/in/sachibansal" class="footer__link" target="_blank">LinkedIn →</a>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/transitions.js"></script>
+  <script>
+    gsap.from("#project-hero > *", {
+      opacity: 0, y: 30, duration: 0.7, stagger: 0.2, ease: "power2.out", delay: 0.2
+    });
+  </script>
+</body>
+</html>
