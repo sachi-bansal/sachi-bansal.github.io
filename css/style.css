@@ -486,7 +486,7 @@ p {
    ABOUT PAGE
    ========================================================= */
 .about-hero {
-  padding: 120px 80px 60px;
+  padding: 120px 80px 20px;
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 60px;
