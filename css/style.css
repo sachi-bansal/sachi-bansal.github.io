@@ -572,12 +572,12 @@ p {
   text-transform: uppercase;
   color: var(--indigo);
   background: rgba(180, 83, 9, 0.25);
-  padding: 12px 24px;
+  padding: 16px 36px;
   transition: background 0.2s;
 }
 .contact-link:hover { background: rgba(180, 83, 9, 0.45); }
 
-.contact-link--email { position: relative; min-width: 200px; }
+.contact-link--email { position: relative; min-width: 260px; }
 .contact-link__label,
 .contact-link__address { display: block; transition: opacity 0.2s; }
 .contact-link__address {
