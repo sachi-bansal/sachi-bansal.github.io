@@ -34,16 +34,15 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
-  <header class="project-hero" id="project-hero">
-    <img src="media/knee_prosthesis_larger.png" alt="Biosynthetic knee endoprosthesis" class="project-hero__img">
-    <div class="project-hero__overlay">
-      <p class="label label--amber" style="color:rgba(255,255,255,0.8);margin-bottom:10px;">Knee · UCLA · In Progress</p>
+  <!-- TYPOGRAPHIC HERO -->
+  <header class="project-hero project-hero--text" id="project-hero">
+    <div style="max-width:800px;">
+      <p class="label label--amber" style="margin-bottom:16px;">Knee · UCLA · In Progress</p>
       <h1>Biosynthetic Knee Endoprosthesis</h1>
     </div>
   </header>
 
-  <!-- SECTION 1: Overview -->
+  <!-- SECTION 1 -->
   <section class="project-section">
     <div class="project-section__text reveal-left">
       <p class="label label--amber">Overview</p>
@@ -51,18 +50,12 @@
       <p>Loss of the patellar tendon (PT) insertion during endoprosthetic knee reconstruction compromises the knee extensor mechanism, severely limiting post-surgical function. Current approaches attempt to reattach soft tissue directly to metal — an interface that remains mechanically unreliable long-term.</p>
       <p>We propose a biosynthetic endoprosthesis that incorporates a bone block housed within the tibial component as a biological landing pad, enabling direct suturing of the patellar tendon to living tissue rather than metal.</p>
     </div>
-    <img src="media/knee_prosthesis.png" alt="Knee prosthesis design" class="project-section__img reveal-right">
-  </section>
-
-  <!-- SECTION 2: Cadaveric Validation -->
-  <section class="project-section project-section--reverse">
     <div class="project-section__text reveal-right">
       <p class="label label--amber">Cadaveric Validation</p>
       <h2>Proof-of-Concept Testing</h2>
       <p>We designed the prosthesis to house a vascularized bone block in the antero-proximal aspect of the tibial component and conducted a cadaveric dissection to verify prosthesis morphology and surgical feasibility.</p>
       <p>The construct was mechanically tested using a KUKA KR-210 robotic manipulator under increasing load until failure, identifying the mechanical limits of each interface and informing the next design iteration.</p>
     </div>
-    <img src="media/knee_figure5.jpg" alt="Cadaveric load testing results" class="project-section__img reveal-left">
   </section>
 
   <!-- STATS -->
@@ -103,7 +96,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="js/transitions.js"></script>
   <script>
-    gsap.from("#project-hero .project-hero__overlay > *", {
+    gsap.from("#project-hero > *", {
       opacity: 0, y: 30, duration: 0.7, stagger: 0.2, ease: "power2.out", delay: 0.2
     });
   </script>
