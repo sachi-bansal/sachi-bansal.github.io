@@ -576,6 +576,20 @@ p {
   transition: background 0.2s;
 }
 .contact-link:hover { background: rgba(180, 83, 9, 0.45); }
+
+.contact-link--email { position: relative; min-width: 200px; }
+.contact-link__label,
+.contact-link__address { display: block; transition: opacity 0.2s; }
+.contact-link__address {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  white-space: nowrap;
+  font-size: 9px;
+}
+.contact-link--email:hover .contact-link__label { opacity: 0; }
+.contact-link--email:hover .contact-link__address { opacity: 1; }
 .contact-tagline {
   font-size: 12px;
   letter-spacing: 2px;
