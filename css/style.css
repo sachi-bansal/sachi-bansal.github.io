@@ -102,7 +102,15 @@ p {
 .nav__links a:hover,
 .nav__links a.active { color: var(--amber); }
 
-/* CV button */
+/* Nav pill border (Projects, About, Contact, CV, LinkedIn) */
+.nav__pill {
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 6px 14px;
+  transition: border-color 0.2s;
+}
+.nav__pill:hover { border-color: var(--amber); }
+
+/* CV / LinkedIn buttons */
 .nav__cv {
   color: rgba(255,255,255,0.7) !important;
   border: 1px solid rgba(255,255,255,0.3);
