@@ -32,11 +32,12 @@
     </ul>
   </nav>
 
-  <!-- TYPOGRAPHIC HERO -->
-  <header class="project-hero project-hero--text" id="project-hero">
-    <div style="max-width:800px;">
-      <p class="label label--indigo" style="margin-bottom:16px;">Wrist · Samsung Research America · Summer 2025</p>
-      <h1 style="white-space:nowrap;font-size:clamp(14px,3.5vw,48px);">Digital Health Internship</h1>
+  <!-- HERO -->
+  <header class="project-hero" id="project-hero">
+    <img src="media/Samsung/samsung_hero.png" alt="Samsung digital health internship" class="project-hero__img">
+    <div class="project-hero__overlay">
+      <p class="label" style="color:var(--indigo);margin-bottom:10px;">Wrist · Samsung Research America · Summer 2025</p>
+      <h1 style="color:var(--indigo);white-space:nowrap;font-size:clamp(14px,3.5vw,48px);">Digital Health Internship</h1>
     </div>
   </header>
 
@@ -85,7 +86,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="js/transitions.js"></script>
   <script>
-    gsap.from("#project-hero > *", {
+    gsap.from("#project-hero .project-hero__overlay > *", {
       opacity: 0, y: 30, duration: 0.7, stagger: 0.2, ease: "power2.out", delay: 0.2
     });
   </script>
