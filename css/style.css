@@ -218,7 +218,7 @@ p {
   letter-spacing: 2px;
   color: var(--indigo);
   line-height: 1.1;
-  text-transform: none;
+  text-transform: uppercase;
 }
 .hero__tagline {
   font-size: 15px;
