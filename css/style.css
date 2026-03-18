@@ -503,7 +503,7 @@ p {
 }
 .about-hero__text { display: flex; flex-direction: column; gap: 16px; }
 .about-hero__text p { text-align: justify; }
-.about-section { padding: 40px 80px; max-width: 1000px; margin: 0 auto; }
+.about-section { padding: 20px 80px; max-width: 1000px; margin: 0 auto; }
 .about-section h3 { margin-bottom: 20px; }
 
 /* Education timeline */
