@@ -42,33 +42,49 @@
     <div class="silhouette-container" id="silhouette">
       <img src="media/human_silhouette.jpg" alt="Human body silhouette showing project locations">
 
-      <!-- Hotspot: Thumb (anatomical right = viewer's left) -->
-      <div class="hotspot hotspot--amber" id="hs-thumb"
-           style="top:64%;left:21%"
-           onclick="navigateTo('thumb.html')">
-        <span class="hotspot__label">Biosynthetic Thumb Prosthesis</span>
-      </div>
+      <!-- Hand / Thumb — anatomical right (viewer's left) -->
+      <a href="thumb.html" class="body-region body-region--amber" id="region-thumb"
+         style="top:52%;left:7%;width:14%;height:18%;">
+        <div class="body-region__card body-region__card--right">
+          <p class="body-region__card-org" style="color:var(--amber)">UCLA · 2025</p>
+          <h4 class="body-region__card-title">Biosynthetic Thumb Prosthesis</h4>
+          <p class="body-region__card-desc">Implantable prosthetic restoring opposition pinch. Published in npj Biomedical Innovation.</p>
+          <span class="body-region__card-cta" style="color:var(--amber)">View project →</span>
+        </div>
+      </a>
 
-      <!-- Hotspot: Right knee / UCLA (viewer's left) -->
-      <div class="hotspot hotspot--amber" id="hs-knee-ucla"
-           style="top:74%;left:33%"
-           onclick="navigateTo('knee-ucla.html')">
-        <span class="hotspot__label">Biosynthetic Knee Endoprosthesis</span>
-      </div>
+      <!-- Wrist / Samsung — anatomical left (viewer's right) -->
+      <a href="wrist-samsung.html" class="body-region body-region--indigo" id="region-samsung"
+         style="top:50%;left:77%;width:12%;height:15%;">
+        <div class="body-region__card body-region__card--left">
+          <p class="body-region__card-org" style="color:var(--indigo)">Samsung · 2025</p>
+          <h4 class="body-region__card-title">Digital Health Internship</h4>
+          <p class="body-region__card-desc">Clinical validation algorithm for blood pressure monitoring in wearables.</p>
+          <span class="body-region__card-cta" style="color:var(--indigo)">View project →</span>
+        </div>
+      </a>
 
-      <!-- Hotspot: Left knee / Stanford (viewer's right) -->
-      <div class="hotspot hotspot--indigo" id="hs-knee-stanford"
-           style="top:74%;left:48%"
-           onclick="navigateTo('knee-stanford.html')">
-        <span class="hotspot__label">Stanford ACL Research</span>
-      </div>
+      <!-- Right knee / UCLA — anatomical right (viewer's left) -->
+      <a href="knee-ucla.html" class="body-region body-region--amber" id="region-knee-ucla"
+         style="top:66%;left:32%;width:11%;height:15%;">
+        <div class="body-region__card body-region__card--above-left">
+          <p class="body-region__card-org" style="color:var(--amber)">UCLA · In Progress</p>
+          <h4 class="body-region__card-title">Biosynthetic Knee Endoprosthesis</h4>
+          <p class="body-region__card-desc">Bone-block interface enabling direct patellar tendon suturing.</p>
+          <span class="body-region__card-cta" style="color:var(--amber)">View project →</span>
+        </div>
+      </a>
 
-      <!-- Hotspot: Left wrist / Samsung (viewer's right) -->
-      <div class="hotspot hotspot--indigo" id="hs-samsung"
-           style="top:62%;left:57%"
-           onclick="navigateTo('wrist-samsung.html')">
-        <span class="hotspot__label">Samsung Digital Health</span>
-      </div>
+      <!-- Left knee / Stanford — anatomical left (viewer's right) -->
+      <a href="knee-stanford.html" class="body-region body-region--indigo" id="region-knee-stanford"
+         style="top:66%;left:50%;width:11%;height:15%;">
+        <div class="body-region__card body-region__card--above-right">
+          <p class="body-region__card-org" style="color:var(--indigo)">Stanford · 2020–2022</p>
+          <h4 class="body-region__card-title">ACL &amp; Cartilage Research</h4>
+          <p class="body-region__card-desc">DoD-funded longitudinal study on post-traumatic osteoarthritis following ACL injury.</p>
+          <span class="body-region__card-cta" style="color:var(--indigo)">View project →</span>
+        </div>
+      </a>
     </div>
 
     <p class="hero__scroll-hint" id="hero-hint">↓ Scroll to explore</p>
@@ -107,24 +123,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="js/transitions.js"></script>
   <script>
-    // Navigate with page fade-out
-    function navigateTo(url) {
-      gsap.to(document.body, {
-        opacity: 0, duration: 0.2, ease: "power1.in",
-        onComplete: () => { window.location.href = url; }
-      });
-    }
-
-    // Hero load sequence — title first, then subtitle (per spec)
     const tl = gsap.timeline({ delay: 0.1 });
-    tl.from("#hero-title",    { opacity: 0, y: 20, duration: 0.6, ease: "power2.out" })
-      .from("#hero-subtitle", { opacity: 0, y: 20, duration: 0.6, ease: "power2.out" }, "-=0.3")
-      .from("#silhouette",    { opacity: 0, y: 60, duration: 0.9, ease: "power2.out" }, "-=0.2")
-      .from("#hs-thumb",      { opacity: 0, scale: 0, duration: 0.4, ease: "back.out(2)" }, "+=0.1")
-      .from("#hs-knee-ucla",  { opacity: 0, scale: 0, duration: 0.4, ease: "back.out(2)" }, "-=0.2")
-      .from("#hs-knee-stanford",{ opacity: 0, scale: 0, duration: 0.4, ease: "back.out(2)" }, "-=0.2")
-      .from("#hs-samsung",    { opacity: 0, scale: 0, duration: 0.4, ease: "back.out(2)" }, "-=0.2")
-      .from("#hero-hint",     { opacity: 0, duration: 0.5 }, "+=0.2");
+    tl.from("#hero-title",           { opacity: 0, y: 20, duration: 0.6, ease: "power2.out" })
+      .from("#hero-subtitle",        { opacity: 0, y: 20, duration: 0.6, ease: "power2.out" }, "-=0.3")
+      .from("#silhouette",           { opacity: 0, y: 60, duration: 0.9, ease: "power2.out" }, "-=0.2")
+      .from("#region-thumb",         { opacity: 0, scale: 0.5, duration: 0.4, ease: "back.out(2)", transformOrigin: "center" }, "+=0.1")
+      .from("#region-samsung",       { opacity: 0, scale: 0.5, duration: 0.4, ease: "back.out(2)", transformOrigin: "center" }, "-=0.2")
+      .from("#region-knee-ucla",     { opacity: 0, scale: 0.5, duration: 0.4, ease: "back.out(2)", transformOrigin: "center" }, "-=0.2")
+      .from("#region-knee-stanford", { opacity: 0, scale: 0.5, duration: 0.4, ease: "back.out(2)", transformOrigin: "center" }, "-=0.2")
+      .from("#hero-hint",            { opacity: 0, duration: 0.5 }, "+=0.2");
   </script>
 </body>
 </html>
