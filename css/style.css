@@ -563,18 +563,18 @@ p {
   gap: 40px;
   text-align: center;
 }
-.contact-links { display: flex; flex-direction: column; gap: 20px; align-items: center; }
+.contact-links { display: flex; flex-direction: row; gap: 20px; align-items: center; justify-content: center; flex-wrap: wrap; }
 .contact-link {
-  font-size: 14px;
-  font-weight: 200;
-  letter-spacing: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--black);
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 4px;
-  transition: border-color 0.2s, color 0.2s;
+  color: var(--indigo);
+  background: var(--amber);
+  padding: 12px 24px;
+  transition: opacity 0.2s;
 }
-.contact-link:hover { color: var(--amber); border-color: var(--amber); }
+.contact-link:hover { opacity: 0.85; }
 .contact-tagline {
   font-size: 12px;
   letter-spacing: 2px;
