@@ -34,9 +34,9 @@
 
   <!-- HERO -->
   <section class="hero" id="hero">
-    <p class="hero__subtitle" id="hero-subtitle">Sachi Bansal · PhD Candidate · Biomedical Engineering · UCLA</p>
     <h1 id="hero-title">Engineering<br>From Bench<br>to Bedside</h1>
     <p class="hero__tagline" id="hero-tagline">Designing and testing medical devices to restore movement within the human body.</p>
+    <p class="hero__subtitle" id="hero-subtitle">Sachi Bansal · PhD Candidate · Biomedical Engineering · UCLA</p>
 
     <div class="silhouette-container" id="silhouette">
       <img src="media/Homepage/human_silhouette.jpg" alt="Human body silhouette showing project locations">
@@ -107,9 +107,9 @@
   <script src="js/transitions.js"></script>
   <script>
     const tl = gsap.timeline({ delay: 0.1 });
-    tl.from("#hero-subtitle",        { opacity: 0, y: 20, duration: 0.5, ease: "power2.out" })
-      .from("#hero-title",           { opacity: 0, y: 20, duration: 0.6, ease: "power2.out" }, "-=0.2")
+    tl.from("#hero-title",           { opacity: 0, y: 20, duration: 0.6, ease: "power2.out" })
       .from("#hero-tagline",         { opacity: 0, y: 20, duration: 0.6, ease: "power2.out" }, "-=0.3")
+      .from("#hero-subtitle",        { opacity: 0, y: 20, duration: 0.5, ease: "power2.out" }, "-=0.2")
       .from("#silhouette",           { opacity: 0, y: 60, duration: 0.9, ease: "power2.out" }, "-=0.2")
       .from("#region-thumb",         { opacity: 0, scale: 0.5, duration: 0.4, ease: "back.out(2)", transformOrigin: "center" }, "+=0.1")
       .from("#region-samsung",       { opacity: 0, scale: 0.5, duration: 0.4, ease: "back.out(2)", transformOrigin: "center" }, "-=0.2")
