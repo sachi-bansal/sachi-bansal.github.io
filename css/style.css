@@ -494,11 +494,10 @@ p {
 
 /* Education timeline */
 .timeline { display: flex; flex-direction: column; gap: 20px; }
-.timeline__item { display: flex; gap: 24px; align-items: flex-start; }
+.timeline__item { display: flex; gap: 24px; align-items: baseline; }
 .timeline__year {
   font-size: 11px;
   letter-spacing: 2px;
-  padding-top: 2px;
   color: var(--amber);
   white-space: nowrap;
   min-width: 80px;
