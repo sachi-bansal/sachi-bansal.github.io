@@ -498,6 +498,7 @@ p {
 .timeline__year {
   font-size: 11px;
   letter-spacing: 2px;
+  padding-top: 2px;
   color: var(--amber);
   white-space: nowrap;
   min-width: 80px;
