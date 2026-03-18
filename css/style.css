@@ -203,12 +203,13 @@ p {
   color: var(--grey);
 }
 #hero-title {
-  font-size: clamp(32px, 5.5vw, 72px);
+  font-size: clamp(42px, 7vw, 96px);
   font-weight: 700;
   letter-spacing: 2px;
   color: var(--indigo);
-  max-width: 800px;
-  line-height: 1.15;
+  max-width: 900px;
+  line-height: 1.1;
+  margin-top: 60px;
 }
 .hero__tagline {
   font-size: 15px;
