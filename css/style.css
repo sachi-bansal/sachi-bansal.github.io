@@ -665,6 +665,16 @@ p {
    RESPONSIVE — 768px
    ========================================================= */
 @media (max-width: 768px) {
+  .hero__text-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 24px;
+  }
+  #hero-title { font-size: clamp(28px, 8vw, 48px); }
+  .contact-links { flex-direction: column; }
+  .contact-link { min-width: 0; width: 100%; max-width: 300px; }
   .nav { padding: 0 20px; }
   .nav__links { gap: 16px; }
   .nav__dropdown-menu { left: auto; right: 0; }
