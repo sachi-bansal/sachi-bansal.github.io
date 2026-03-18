@@ -526,6 +526,26 @@ p {
 }
 
 /* =========================================================
+   HAMBURGER NAV (MOBILE)
+   ========================================================= */
+.nav__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+  background: none;
+  border: none;
+}
+.nav__hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: rgba(255,255,255,0.8);
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+/* =========================================================
    RESPONSIVE — 768px
    ========================================================= */
 @media (max-width: 768px) {
@@ -588,22 +608,3 @@ p {
   .nav__dropdown.open .nav__dropdown-menu { display: block; }
 }
 
-/* =========================================================
-   HAMBURGER NAV (MOBILE)
-   ========================================================= */
-.nav__hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-  padding: 4px;
-  background: none;
-  border: none;
-}
-.nav__hamburger span {
-  display: block;
-  width: 22px;
-  height: 2px;
-  background: rgba(255,255,255,0.8);
-  transition: transform 0.2s, opacity 0.2s;
-}
