@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sachi Bansal — Biosynthetic Knee Endoprosthesis</title>
+  <meta name="description" content="A biosynthetic knee endoprosthesis using a bone-block interface for direct patellar tendon suturing in endoprosthetic reconstruction. UCLA PhD research.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Sachi Bansal</a>
+    <ul class="nav__links">
+      <li class="nav__dropdown">
+        <a href="#" class="active">Projects ▾</a>
+        <ul class="nav__dropdown-menu">
+          <span class="nav__sub-label">UCLA</span>
+          <li><a href="thumb.html">Biosynthetic Thumb Prosthesis</a></li>
+          <li><a href="knee-ucla.html" class="active">Biosynthetic Knee Endoprosthesis</a></li>
+          <span class="nav__sub-label">Stanford</span>
+          <li><a href="knee-stanford.html">ACL &amp; Cartilage Research</a></li>
+          <span class="nav__sub-label">Samsung</span>
+          <li><a href="wrist-samsung.html">Digital Health Internship</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="assets/sachi_resume_march_2026.pdf" class="nav__cv" target="_blank">CV ↓</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="project-hero" id="project-hero">
+    <img src="media/knee_prosthesis_larger.png" alt="Biosynthetic knee endoprosthesis" class="project-hero__img">
+    <div class="project-hero__overlay">
+      <p class="label label--amber" style="color:rgba(255,255,255,0.8);margin-bottom:10px;">Knee · UCLA · In Progress</p>
+      <h1>Biosynthetic Knee Endoprosthesis</h1>
+    </div>
+  </header>
+
+  <!-- SECTION 1: Overview -->
+  <section class="project-section">
+    <div class="project-section__text reveal-left">
+      <p class="label label--amber">Overview</p>
+      <h2>Solving Soft Tissue–to–Metal Attachment</h2>
+      <p>Loss of the patellar tendon (PT) insertion during endoprosthetic knee reconstruction compromises the knee extensor mechanism, severely limiting post-surgical function. Current approaches attempt to reattach soft tissue directly to metal — an interface that remains mechanically unreliable long-term.</p>
+      <p>We propose a biosynthetic endoprosthesis that incorporates a bone block housed within the tibial component as a biological landing pad, enabling direct suturing of the patellar tendon to living tissue rather than metal.</p>
+    </div>
+    <img src="media/knee_prosthesis.png" alt="Knee prosthesis design" class="project-section__img reveal-right">
+  </section>
+
+  <!-- SECTION 2: Cadaveric Validation -->
+  <section class="project-section project-section--reverse">
+    <div class="project-section__text reveal-right">
+      <p class="label label--amber">Cadaveric Validation</p>
+      <h2>Proof-of-Concept Testing</h2>
+      <p>We designed the prosthesis to house a vascularized bone block in the antero-proximal aspect of the tibial component and conducted a cadaveric dissection to verify prosthesis morphology and surgical feasibility.</p>
+      <p>The construct was mechanically tested using a KUKA KR-210 robotic manipulator under increasing load until failure, identifying the mechanical limits of each interface and informing the next design iteration.</p>
+    </div>
+    <img src="media/knee_figure5.jpg" alt="Cadaveric load testing results" class="project-section__img reveal-left">
+  </section>
+
+  <!-- STATS -->
+  <div class="project-stats reveal-group">
+    <div>
+      <p class="project-stat__number">160 N</p>
+      <p class="project-stat__label">Failure load demonstrated</p>
+    </div>
+    <div>
+      <p class="project-stat__number">Cadaver</p>
+      <p class="project-stat__label">Proof-of-concept validated</p>
+    </div>
+    <div>
+      <p class="project-stat__number">KUKA</p>
+      <p class="project-stat__label">Robotic load testing</p>
+    </div>
+  </div>
+
+  <!-- ABSTRACT LINK -->
+  <div class="project-pub reveal">
+    <p class="label label--amber" style="margin-bottom:12px;">Publication</p>
+    <p class="project-pub__citation"><strong>S. Bansal</strong>, S. Thomas, K. Bollavaram, B. K. Zukotynski, L. E. Wessel, M. Delong, T. R. Clites. "Cadaveric Proof-of-Concept of Soft Tissue to Metal Attachment in a Biosynthetic Knee Endoprosthesis." World Congress of Biomechanics, 2024.</p>
+    <a href="assets/knee_wcb_abstract.pdf" class="project-pub__link" target="_blank">Download Abstract →</a>
+  </div>
+
+  <!-- PROJECT NAV -->
+  <nav class="project-nav">
+    <a href="thumb.html" class="project-nav__link">← Biosynthetic Thumb Prosthesis</a>
+    <a href="knee-stanford.html" class="project-nav__link">Stanford ACL Research →</a>
+  </nav>
+
+  <footer class="footer">
+    <a href="mailto:sachibansal248@gmail.com" class="footer__link">sachibansal248@gmail.com</a>
+    <a href="https://linkedin.com/in/sachibansal" class="footer__link" target="_blank">LinkedIn →</a>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/transitions.js"></script>
+  <script>
+    gsap.from("#project-hero .project-hero__overlay > *", {
+      opacity: 0, y: 30, duration: 0.7, stagger: 0.2, ease: "power2.out", delay: 0.2
+    });
+  </script>
+</body>
+</html>
