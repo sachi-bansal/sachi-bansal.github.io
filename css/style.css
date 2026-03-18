@@ -561,3 +561,51 @@ p {
 
   .hotspot { width: 18px; height: 18px; } /* bigger tap target */
 }
+
+/* =========================================================
+   HAMBURGER NAV (MOBILE)
+   ========================================================= */
+.nav__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+  background: none;
+  border: none;
+}
+.nav__hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: rgba(255,255,255,0.8);
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+@media (max-width: 768px) {
+  .nav__hamburger { display: flex; }
+
+  .nav__links {
+    display: none;
+    position: absolute;
+    top: 56px; left: 0; right: 0;
+    background: var(--indigo);
+    flex-direction: column;
+    padding: 16px 20px 24px;
+    gap: 0;
+  }
+  .nav__links.open { display: flex; }
+  .nav__links > li { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .nav__links > li:last-child { border-bottom: none; }
+
+  .nav__dropdown-menu {
+    position: static;
+    display: none;
+    border-top: none;
+    border-left: 2px solid var(--amber);
+    margin: 8px 0 0 12px;
+    padding: 0;
+    min-width: auto;
+  }
+  .nav__dropdown.open .nav__dropdown-menu { display: block; }
+}
