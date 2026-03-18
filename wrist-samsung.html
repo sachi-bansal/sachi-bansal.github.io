@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sachi Bansal — Samsung Digital Health Internship</title>
+  <meta name="description" content="Digital Health Intern at Samsung Research America. Clinical validation algorithm for continuous blood pressure monitoring in wearable devices. Summer 2025.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Sachi Bansal</a>
+    <ul class="nav__links">
+      <li class="nav__dropdown">
+        <a href="#" class="active">Projects ▾</a>
+        <ul class="nav__dropdown-menu">
+          <span class="nav__sub-label">UCLA</span>
+          <li><a href="thumb.html">Biosynthetic Thumb Prosthesis</a></li>
+          <li><a href="knee-ucla.html">Biosynthetic Knee Endoprosthesis</a></li>
+          <span class="nav__sub-label">Stanford</span>
+          <li><a href="knee-stanford.html">ACL &amp; Cartilage Research</a></li>
+          <span class="nav__sub-label">Samsung</span>
+          <li><a href="wrist-samsung.html" class="active">Digital Health Internship</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="assets/sachi_resume_march_2026.pdf" class="nav__cv" target="_blank">CV ↓</a></li>
+    </ul>
+  </nav>
+
+  <!-- TYPOGRAPHIC HERO -->
+  <header class="project-hero project-hero--text" id="project-hero">
+    <div style="max-width:800px;">
+      <p class="label label--indigo" style="margin-bottom:16px;">Wrist · Samsung Research America · Summer 2025</p>
+      <h1>Digital Health Internship</h1>
+    </div>
+  </header>
+
+  <!-- SECTION 1 -->
+  <section class="project-section">
+    <div class="project-section__text reveal-left">
+      <p class="label label--indigo">Project Overview</p>
+      <h2>Wearable Blood Pressure Monitoring</h2>
+      <p>At Samsung Research America, I developed a clinical validation algorithm combining statistical modeling and machine learning (MATLAB) to analyze digital biomarkers for wellness detection in healthcare wearable devices.</p>
+      <p>I designed and executed a validation study protocol using an oscillometric reference standard to establish ground truth for continuous blood pressure monitoring algorithm development — bridging clinical rigor with consumer wearable technology.</p>
+    </div>
+    <div class="project-section__text reveal-right">
+      <p class="label label--indigo">Key Contributions</p>
+      <h2>Validation &amp; Analysis</h2>
+      <p>I conducted root cause analysis to identify data synchronization failures in a large-scale clinical study and provided analytical support for implementing data integrity solutions. I also developed a sensor validation protocol using correlation analysis to assess ambient light sensor accuracy for health monitoring applications.</p>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="project-stats reveal-group">
+    <div>
+      <p class="project-stat__number project-stat__number--indigo">ML</p>
+      <p class="project-stat__label">Statistical + ML algorithm</p>
+    </div>
+    <div>
+      <p class="project-stat__number project-stat__number--indigo">BP</p>
+      <p class="project-stat__label">Continuous monitoring</p>
+    </div>
+    <div>
+      <p class="project-stat__number project-stat__number--indigo">2025</p>
+      <p class="project-stat__label">Mountain View, CA</p>
+    </div>
+  </div>
+
+  <!-- PROJECT NAV -->
+  <nav class="project-nav">
+    <a href="knee-stanford.html" class="project-nav__link">← Stanford ACL Research</a>
+    <a href="index.html" class="project-nav__link">Back to Home →</a>
+  </nav>
+
+  <footer class="footer">
+    <a href="mailto:sachibansal248@gmail.com" class="footer__link">sachibansal248@gmail.com</a>
+    <a href="https://linkedin.com/in/sachibansal" class="footer__link" target="_blank">LinkedIn →</a>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/transitions.js"></script>
+  <script>
+    gsap.from("#project-hero > *", {
+      opacity: 0, y: 30, duration: 0.7, stagger: 0.2, ease: "power2.out", delay: 0.2
+    });
+  </script>
+</body>
+</html>
