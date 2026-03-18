@@ -193,6 +193,15 @@ p {
   text-transform: uppercase;
   color: var(--indigo);
 }
+.hero__tagline {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--grey);
+  max-width: 480px;
+  text-align: center;
+  line-height: 1.8;
+  margin-top: 4px;
+}
 .hero__scroll-hint {
   font-size: 10px;
   letter-spacing: 3px;
