@@ -202,24 +202,30 @@ p {
   text-transform: uppercase;
   color: var(--grey);
 }
+.hero__text-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+  text-align: left;
+  margin-top: 60px;
+}
 #hero-title {
   font-size: clamp(36px, 5vw, 64px);
   font-weight: 700;
   letter-spacing: 2px;
   color: var(--indigo);
-  max-width: 900px;
   line-height: 1.1;
-  margin-top: 60px;
 }
 .hero__tagline {
   font-size: 15px;
   font-weight: 300;
   color: var(--grey);
-  max-width: 520px;
-  text-align: center;
+  text-align: left;
   line-height: 1.8;
-  margin-top: 8px;
-  margin-bottom: 20px;
+  max-width: none;
 }
 .hero__scroll-hint {
   font-size: 10px;
