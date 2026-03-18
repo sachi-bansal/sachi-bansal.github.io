@@ -203,14 +203,14 @@ p {
   color: var(--grey);
 }
 .hero__text-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  max-width: 900px;
+  max-width: 700px;
   width: 100%;
-  text-align: left;
+  text-align: center;
   margin-top: 60px;
+  gap: 20px;
 }
 #hero-title {
   font-size: clamp(36px, 5vw, 64px);
@@ -224,9 +224,9 @@ p {
   font-size: 15px;
   font-weight: 300;
   color: var(--grey);
-  text-align: left;
+  text-align: center;
   line-height: 1.8;
-  max-width: none;
+  max-width: 560px;
 }
 .hero__scroll-hint {
   font-size: 10px;
