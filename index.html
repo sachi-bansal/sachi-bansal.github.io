@@ -11,7 +11,7 @@
 <body>
 
   <nav class="nav">
-    <a href="index.html" class="nav__logo active">Sachi Bansal</a>
+    <a href="index.html" class="nav__logo active">Sachi Bansal<span class="nav__logo-subtitle">PhD Candidate · Biomedical Engineering · UCLA</span></a>
       <button class="nav__hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
         <span></span><span></span><span></span>
       </button>
@@ -36,7 +36,6 @@
   <section class="hero" id="hero">
     <h1 id="hero-title">Engineering From <span style="color:var(--amber)">Bench</span> to <span style="color:var(--amber)">Bedside</span></h1>
     <p class="hero__tagline" id="hero-tagline">Designing implants to restore movement in the human body.</p>
-    <p class="hero__subtitle" id="hero-subtitle">Sachi Bansal · PhD Candidate · Biomedical Engineering · UCLA</p>
 
     <div class="silhouette-container" id="silhouette">
       <img src="media/Homepage/human_silhouette.jpg" alt="Human body silhouette showing project locations">
@@ -109,7 +108,6 @@
     const tl = gsap.timeline({ delay: 0.1 });
     tl.from("#hero-title",           { opacity: 0, y: 20, duration: 0.6, ease: "power2.out" })
       .from("#hero-tagline",         { opacity: 0, y: 20, duration: 0.6, ease: "power2.out" }, "-=0.3")
-      .from("#hero-subtitle",        { opacity: 0, y: 20, duration: 0.5, ease: "power2.out" }, "-=0.2")
       .from("#silhouette",           { opacity: 0, y: 60, duration: 0.9, ease: "power2.out" }, "-=0.2")
       .from("#region-thumb",         { opacity: 0, scale: 0.5, duration: 0.4, ease: "back.out(2)", transformOrigin: "center" }, "+=0.1")
       .from("#region-samsung",       { opacity: 0, scale: 0.5, duration: 0.4, ease: "back.out(2)", transformOrigin: "center" }, "-=0.2")
