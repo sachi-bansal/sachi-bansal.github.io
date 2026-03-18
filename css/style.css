@@ -219,11 +219,11 @@ p {
 }
 .body-region--amber {
   background: rgba(180, 83, 9, 0.35);
-  box-shadow: 0 0 0 2px rgba(180, 83, 9, 0.5);
+  box-shadow: 0 0 0 2px rgba(30, 27, 75, 0.7);
 }
 .body-region--amber:hover {
   background: rgba(255, 235, 180, 0.8);
-  box-shadow: 0 0 0 3px rgba(180, 83, 9, 0.6), 0 0 20px rgba(180, 83, 9, 0.25);
+  box-shadow: 0 0 0 3px rgba(30, 27, 75, 0.9), 0 0 20px rgba(180, 83, 9, 0.25);
 }
 .body-region--indigo {
   background: rgba(30, 27, 75, 0.3);
