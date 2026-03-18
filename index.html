@@ -21,7 +21,6 @@
         <ul class="nav__dropdown-menu">
           <span class="nav__sub-label">UCLA</span>
           <li><a href="thumb.html">Biosynthetic Thumb Prosthesis</a></li>
-          <li><a href="knee-ucla.html">Biosynthetic Knee Endoprosthesis</a></li>
           <span class="nav__sub-label">Stanford</span>
           <li><a href="knee-stanford.html">ACL &amp; Cartilage Research</a></li>
           <span class="nav__sub-label">Samsung</span>
@@ -63,18 +62,7 @@
         </div>
       </a>
 
-      <!-- Right knee / UCLA — anatomical right (viewer's left) -->
-      <a href="knee-ucla.html" class="body-region body-region--amber" id="region-knee-ucla"
-         style="top:68%;left:40%;width:9%;height:11%;">
-        <div class="body-region__card body-region__card--left">
-          <p class="body-region__card-org" style="color:var(--amber)">UCLA · In Progress</p>
-          <h4 class="body-region__card-title">Biosynthetic Knee Endoprosthesis</h4>
-          <p class="body-region__card-desc">Bone-block interface enabling direct patellar tendon suturing.</p>
-          <span class="body-region__card-cta" style="color:var(--amber)">View project →</span>
-        </div>
-      </a>
-
-      <!-- Left knee / Stanford — anatomical left (viewer's right) -->
+<!-- Left knee / Stanford — anatomical left (viewer's right) -->
       <a href="knee-stanford.html" class="body-region body-region--amber" id="region-knee-stanford"
          style="top:68%;left:51%;width:9%;height:11%;">
         <div class="body-region__card body-region__card--right">
@@ -91,11 +79,7 @@
 
   <!-- PROJECT CARDS -->
   <section class="projects-grid reveal-group">
-    <a href="knee-ucla.html" class="project-card">
-      <p class="project-card__org label--amber">UCLA · In Progress</p>
-      <h3 class="project-card__title">Biosynthetic Knee Endoprosthesis</h3>
-      <p class="project-card__desc">Bone-block interface enabling direct patellar tendon suturing in endoprosthetic reconstruction.</p>
-    </a>
+
     <a href="thumb.html" class="project-card">
       <p class="project-card__org label--amber">UCLA · 2025</p>
       <h3 class="project-card__title">Biosynthetic Thumb Prosthesis</h3>
@@ -127,7 +111,6 @@
       .from("#silhouette",           { opacity: 0, y: 60, duration: 0.9, ease: "power2.out" }, "-=0.2")
       .from("#region-thumb",         { opacity: 0, scale: 0.5, duration: 0.4, ease: "back.out(2)", transformOrigin: "center" }, "+=0.1")
       .from("#region-samsung",       { opacity: 0, scale: 0.5, duration: 0.4, ease: "back.out(2)", transformOrigin: "center" }, "-=0.2")
-      .from("#region-knee-ucla",     { opacity: 0, scale: 0.5, duration: 0.4, ease: "back.out(2)", transformOrigin: "center" }, "-=0.2")
       .from("#region-knee-stanford", { opacity: 0, scale: 0.5, duration: 0.4, ease: "back.out(2)", transformOrigin: "center" }, "-=0.2")
       .from("#hero-hint",            { opacity: 0, duration: 0.5 }, "+=0.2");
   </script>
