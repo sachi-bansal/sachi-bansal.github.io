@@ -313,7 +313,7 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .project-card {
@@ -400,8 +400,8 @@ p {
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
-  padding: 80px 48px;
-  max-width: 900px;
+  padding: 80px 80px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .project-section--reverse { direction: rtl; }
@@ -421,7 +421,7 @@ p {
   padding: 60px 80px;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
@@ -442,8 +442,8 @@ p {
 
 /* Publication / link block */
 .project-pub {
-  padding: 40px 48px;
-  max-width: 900px;
+  padding: 40px 80px;
+  max-width: 1200px;
   margin: 0 auto;
   border-left: 3px solid var(--amber);
 }
@@ -466,9 +466,9 @@ p {
 .project-nav {
   display: flex;
   justify-content: space-between;
-  padding: 40px 48px;
+  padding: 40px 80px;
   border-top: 1px solid var(--border);
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .project-nav__link {
@@ -490,7 +490,7 @@ p {
   grid-template-columns: 200px 1fr;
   gap: 60px;
   align-items: start;
-  max-width: 860px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .about-hero__img {
@@ -501,7 +501,7 @@ p {
   border-radius: 2px;
 }
 .about-hero__text { display: flex; flex-direction: column; gap: 16px; }
-.about-section { padding: 40px 48px; max-width: 860px; margin: 0 auto; }
+.about-section { padding: 40px 80px; max-width: 1000px; margin: 0 auto; }
 .about-section h3 { margin-bottom: 20px; }
 
 /* Education timeline */
