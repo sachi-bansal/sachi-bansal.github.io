@@ -254,6 +254,17 @@ p {
   justify-self: start;
   overflow: visible;
 }
+.silhouette-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: white;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='97'%3E%3Cpath d='M28 2 L54 17 L54 47 L28 62 L2 47 L2 17 Z' fill='none' stroke='%231e1b4b' stroke-opacity='0.15' stroke-width='0.8'/%3E%3Cpath d='M28 62 L54 77 L54 97' fill='none' stroke='%231e1b4b' stroke-opacity='0.15' stroke-width='0.8'/%3E%3Cpath d='M28 62 L2 77 L2 97' fill='none' stroke='%231e1b4b' stroke-opacity='0.15' stroke-width='0.8'/%3E%3C/svg%3E");
+  background-size: 36px 62px;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 3;
+}
 .silhouette-container::after {
   content: '';
   position: absolute;
@@ -267,7 +278,6 @@ p {
   max-height: calc(100vh - 80px);
   width: auto;
   display: block;
-  mix-blend-mode: multiply;
 }
 
 /* Hoverable body region overlays */
