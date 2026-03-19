@@ -214,9 +214,9 @@ p {
   gap: 20px;
 }
 #hero-title {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: clamp(64px, 10vw, 140px);
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 3px;
   color: var(--black);
   line-height: 1.0;
