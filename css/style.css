@@ -221,6 +221,9 @@ p {
   color: var(--black);
   line-height: 1.0;
   text-transform: uppercase;
+  transform: scaleY(1.3);
+  transform-origin: center top;
+  display: block;
 }
 .hero__gradient-word {
   background: linear-gradient(to right, var(--amber), var(--indigo));
