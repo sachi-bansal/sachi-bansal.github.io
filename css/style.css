@@ -683,10 +683,15 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 0 24px;
+    gap: 24px;
   }
-  #hero-title { font-size: clamp(28px, 8vw, 48px); }
+  #hero-title {
+    font-size: clamp(52px, 14vw, 80px);
+    transform: scaleY(1.2);
+  }
+  .hero__tagline { font-size: 14px; }
   .contact-links { flex-direction: column; }
   .contact-link { min-width: 0; width: 100%; max-width: 300px; }
   .nav { padding: 0 20px; }
