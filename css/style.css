@@ -21,8 +21,8 @@ body {
   font-weight: 300;
   color: var(--black);
   background-color: var(--white);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22150%22%3E%3Cpath d=%22M0 75 C75 55 225 95 300 75%22 fill=%22none%22 stroke=%22%231e1b4b%22 stroke-opacity=%220.055%22 stroke-width=%221%22/%3E%3Cpath d=%22M0 45 C75 25 225 65 300 45%22 fill=%22none%22 stroke=%22%231e1b4b%22 stroke-opacity=%220.04%22 stroke-width=%221%22/%3E%3Cpath d=%22M0 105 C75 85 225 125 300 105%22 fill=%22none%22 stroke=%22%231e1b4b%22 stroke-opacity=%220.04%22 stroke-width=%221%22/%3E%3Cpath d=%22M0 15 C75 -5 225 35 300 15%22 fill=%22none%22 stroke=%22%231e1b4b%22 stroke-opacity=%220.03%22 stroke-width=%221%22/%3E%3Cpath d=%22M0 135 C75 115 225 155 300 135%22 fill=%22none%22 stroke=%22%231e1b4b%22 stroke-opacity=%220.03%22 stroke-width=%221%22/%3E%3Cpath d=%22M0 0 C75 -20 225 20 300 0%22 fill=%22none%22 stroke=%22%231e1b4b%22 stroke-opacity=%220.025%22 stroke-width=%221%22/%3E%3Cpath d=%22M0 150 C75 130 225 170 300 150%22 fill=%22none%22 stroke=%22%231e1b4b%22 stroke-opacity=%220.025%22 stroke-width=%221%22/%3E%3C/svg%3E");
-  background-size: 300px 150px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='97'%3E%3Cpath d='M28 2 L54 17 L54 47 L28 62 L2 47 L2 17 Z' fill='none' stroke='%231e1b4b' stroke-opacity='0.07' stroke-width='0.8'/%3E%3Cpath d='M28 62 L54 77 L54 97' fill='none' stroke='%231e1b4b' stroke-opacity='0.07' stroke-width='0.8'/%3E%3Cpath d='M28 62 L2 77 L2 97' fill='none' stroke='%231e1b4b' stroke-opacity='0.07' stroke-width='0.8'/%3E%3C/svg%3E");
+  background-size: 36px 62px;
   opacity: 0; /* GSAP fades this in on load */
 }
 img { display: block; max-width: 100%; height: auto; }
