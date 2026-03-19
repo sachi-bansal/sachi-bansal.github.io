@@ -190,8 +190,9 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  justify-content: center;
   padding: 56px 60px 0 60px;
-  gap: 40px;
+  gap: 0;
 }
 .hero__subtitle {
   font-size: 10px;
@@ -246,7 +247,7 @@ p {
 .silhouette-container {
   position: relative;
   width: fit-content;
-  justify-self: center;
+  justify-self: start;
   overflow: visible;
 }
 .silhouette-container::after {
