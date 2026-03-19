@@ -697,6 +697,7 @@ p {
   }
   .hero__text-grid {
     align-items: center;
+    justify-self: center;
     text-align: center;
     gap: 16px;
   }
