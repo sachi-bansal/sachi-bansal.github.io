@@ -213,11 +213,12 @@ p {
   gap: 20px;
 }
 #hero-title {
-  font-size: clamp(36px, 5vw, 64px);
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(48px, 7vw, 96px);
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   color: var(--black);
-  line-height: 1.1;
+  line-height: 1.05;
   text-transform: uppercase;
 }
 .hero__gradient-word {
