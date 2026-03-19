@@ -8,10 +8,6 @@
   <link rel="icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>
-    html { scroll-snap-type: y mandatory; }
-    .hero--intro, .hero--silhouette, .projects-grid { scroll-snap-align: start; }
-  </style>
 </head>
 <body>
 
@@ -37,8 +33,13 @@
     </ul>
   </nav>
 
-  <!-- HERO SILHOUETTE -->
-  <section class="hero hero--silhouette" id="hero">
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__text-grid" id="hero-text">
+      <h1 id="hero-title">Engineering<br>From <span class="hero__gradient-word">Bench</span><br>to <span class="hero__gradient-word">Bedside</span>.</h1>
+      <p class="hero__tagline" id="hero-tagline">I design and test biosynthetic implants that restore movement in the human body, from mechanical design through surgical validation.</p>
+      <p class="hero__scroll-hint" id="hero-hint">↓ Scroll to explore</p>
+    </div>
     <div class="silhouette-container" id="silhouette">
       <img src="media/Homepage/human_silhouette.jpg" alt="Human body silhouette showing project locations">
 
@@ -75,15 +76,6 @@
         </div>
       </a>
     </div>
-  </section>
-
-  <!-- HERO INTRO -->
-  <section class="hero hero--intro">
-    <div class="hero__text-grid" id="hero-text">
-      <h1 id="hero-title">Engineering<br>From <span class="hero__gradient-word">Bench</span><br>to <span class="hero__gradient-word">Bedside</span>.</h1>
-      <p class="hero__tagline" id="hero-tagline">I design and test biosynthetic implants that restore movement in the human body, from mechanical design through surgical validation.</p>
-    </div>
-    <p class="hero__scroll-hint" id="hero-hint">↓ Scroll to explore</p>
   </section>
 
   <!-- PROJECT CARDS -->
