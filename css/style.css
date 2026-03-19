@@ -186,15 +186,16 @@ p {
    HERO (homepage)
    ========================================================= */
 .hero {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 56px; /* nav height */
+  padding-top: 56px;
   text-align: center;
   gap: 12px;
 }
+.hero--silhouette { padding-top: 56px; }
 .hero__subtitle {
   font-size: 10px;
   font-weight: 500;
@@ -214,11 +215,11 @@ p {
 }
 #hero-title {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(48px, 7vw, 96px);
+  font-size: clamp(64px, 10vw, 140px);
   font-weight: 700;
   letter-spacing: 3px;
   color: var(--black);
-  line-height: 1.05;
+  line-height: 1.0;
   text-transform: uppercase;
 }
 .hero__gradient-word {
@@ -228,12 +229,12 @@ p {
   background-clip: text;
 }
 .hero__tagline {
-  font-size: 15px;
+  font-size: clamp(16px, 1.8vw, 22px);
   font-weight: 300;
   color: var(--grey);
   text-align: center;
   line-height: 1.8;
-  max-width: 560px;
+  max-width: 600px;
 }
 .hero__scroll-hint {
   font-size: 10px;

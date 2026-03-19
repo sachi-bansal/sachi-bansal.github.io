@@ -8,6 +8,10 @@
   <link rel="icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-snap-type: y mandatory; }
+    .hero--intro, .hero--silhouette, .projects-grid { scroll-snap-align: start; }
+  </style>
 </head>
 <body>
 
@@ -33,13 +37,17 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero" id="hero">
+  <!-- HERO INTRO -->
+  <section class="hero hero--intro" id="hero">
     <div class="hero__text-grid" id="hero-text">
       <h1 id="hero-title">Engineering<br>From <span class="hero__gradient-word">Bench</span><br>to <span class="hero__gradient-word">Bedside</span></h1>
       <p class="hero__tagline" id="hero-tagline">I design and test biosynthetic implants that restore movement in the human body, from mechanical design through surgical validation.</p>
     </div>
+    <p class="hero__scroll-hint" id="hero-hint">↓ Scroll to explore</p>
+  </section>
 
+  <!-- HERO SILHOUETTE -->
+  <section class="hero hero--silhouette">
     <div class="silhouette-container" id="silhouette">
       <img src="media/Homepage/human_silhouette.jpg" alt="Human body silhouette showing project locations">
 
@@ -65,7 +73,7 @@
         </div>
       </a>
 
-<!-- Left knee / Stanford — anatomical left (viewer's right) -->
+      <!-- Left knee / Stanford — anatomical left (viewer's right) -->
       <a href="knee-stanford.html" class="body-region body-region--amber" id="region-knee-stanford"
          style="top:68%;left:51%;width:9%;height:11%;">
         <div class="body-region__card body-region__card--right">
@@ -76,8 +84,6 @@
         </div>
       </a>
     </div>
-
-    <p class="hero__scroll-hint" id="hero-hint">↓ Scroll to explore</p>
   </section>
 
   <!-- PROJECT CARDS -->
