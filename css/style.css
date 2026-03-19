@@ -266,6 +266,7 @@ p {
   max-height: calc(100vh - 80px);
   width: auto;
   display: block;
+  mix-blend-mode: multiply;
 }
 
 /* Hoverable body region overlays */
