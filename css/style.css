@@ -245,8 +245,8 @@ p {
    ========================================================= */
 .silhouette-container {
   position: relative;
-  display: flex;
-  justify-content: center;
+  width: fit-content;
+  justify-self: center;
   overflow: visible;
 }
 .silhouette-container::after {
