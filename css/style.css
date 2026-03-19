@@ -208,6 +208,7 @@ p {
   flex-direction: column;
   align-items: flex-start;
   justify-self: end;
+  width: fit-content;
   gap: 16px;
 }
 #hero-title {
