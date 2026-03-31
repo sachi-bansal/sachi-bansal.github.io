@@ -444,6 +444,18 @@ p {
 }
 .project-hero--text h1 { color: var(--black); }
 .project-hero--text .label { color: var(--indigo); }
+.project-hero--knee::after {
+  content: '';
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 260px;
+  height: 160px;
+  background: var(--amber);
+  opacity: 0.12;
+  border-radius: 2px;
+}
 
 /* =========================================================
    PROJECT SECTIONS (alternating)
