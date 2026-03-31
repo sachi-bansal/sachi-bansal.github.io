@@ -547,6 +547,7 @@ p {
   max-width: 1000px;
   margin: 0 auto;
 }
+.about-hero__label { grid-column: 1 / -1; margin-bottom: -40px; }
 .about-hero__img {
   width: 200px;
   height: 260px;
